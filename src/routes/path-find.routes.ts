@@ -64,7 +64,7 @@ const findShortestPath = (
 
     // for each of those child nodes:
     for (const child in children) {
-      // make sure each child node is not the start node
+      // child node should not be the start node
       if (child === startNode) {
         continue;
       } else {

@@ -44,6 +44,8 @@ router.get(
 
 // Function to update
 export const isValidLandingZone = ({ R1: arr1, R2: arr2 }: ICoordinates) => {
+
+  // here we can directly check using arr1 element exist in any of the index in arr2 if not then return false.
   for (let i = 0; i < arr2.length; i++) {
     if (arr1.indexOf(arr2[i]) === -1) {
       return false;
